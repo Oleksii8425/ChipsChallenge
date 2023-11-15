@@ -5,7 +5,9 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.scene.layout.Region;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import javafx.event.ActionEvent;
@@ -36,11 +38,14 @@ public class CreateProfileWindow extends Application {
     }
 
     public void addButtonCLicked(ActionEvent actionEvent) {
-        Alert alert = new Alert(Alert.AlertType.INFORMATION);
-        alert.getDialogPane().setContent( new Text("Congratulations!"
+        Alert alert = new Alert(Alert.AlertType.CONFIRMATION, "Congratulations! "
                 + "You added a new profile with username: "
-                + usernameTextField.getText()));
+                + usernameTextField.getText());
+        alert.getDialogPane().getChildren().stream().filter(node ->
+            node instanceof Label).forEach(node ->
+                ((Label)node).setMinHeight(Region.USE_PREF_SIZE));
         alert.showAndWait();
+
         Stage stage = (Stage) addButton.getScene().getWindow();
         stage.close();
     }
