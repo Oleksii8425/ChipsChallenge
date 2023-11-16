@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="627d0aea-f756-4ff0-98ca-5fbb6e5ffa9f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Path.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/background.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/default_icon.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CreateProfileWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/CreateProfileWindow.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CreateProfileWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CreateProfileWindow.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -50,7 +52,9 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\GitHub\CS-230-A2\src\resources" />
       <recent name="D:\GitHub\CS-230-A2\src" />
+      <recent name="D:\GitHub\CS-230-A2\resources" />
     </key>
   </component>
   <component name="RunManager">

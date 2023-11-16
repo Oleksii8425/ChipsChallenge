@@ -7,6 +7,7 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
 import javafx.scene.layout.Region;
 import javafx.stage.Stage;
 import javafx.event.ActionEvent;
@@ -30,9 +31,13 @@ public class CreateProfileWindow extends Application {
 
         Scene scene = new Scene(root);
 
-        stage.setTitle("Creating new profile window");
+        stage.setTitle("");
+
         stage.setResizable(false);
         stage.setScene(scene);
+        stage.getIcons().add(new Image(getClass().getResourceAsStream("/resources/default_icon.png")));
+        scene.getStylesheets().add(CreateProfileWindow.class.getResource("resources/test.css").toExternalForm());
+
         stage.show();
     }
 
