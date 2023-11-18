@@ -1,4 +1,15 @@
-# CS-230-A2
+# A2 (Chip's Challenge) 
 
 ## Description
-* So this is the Chip's Challenge game done by Group 25 for the CS-230 Coursework
+
+## Build Status
+
+## How to Install & Run the Project
+
+## Features
+
+## Tests
+
+## Credits
+
+## License (?) 
