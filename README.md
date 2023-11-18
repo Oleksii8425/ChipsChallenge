@@ -1,15 +1,15 @@
-# A2 (Chip's Challenge) 
+# **A2 (Chip's Challenge)**  
 
-## Description
+## **Description**
 
-## Build Status
+## **Build Status**
 
-## How to Install & Run the Project
+## **How to Install & Run the Project**
 
-## Features
+## **Features**
 
-## Tests
+## **Tests**
 
-## Credits
+## **Credits**
 
-## License (?) 
+## **License (?)** 
