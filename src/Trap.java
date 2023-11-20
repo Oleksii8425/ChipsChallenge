@@ -12,6 +12,10 @@ public class Trap extends Path {
         this.isActivated = isActivated;
     }
 
+    public void setIsActivated(boolean isActivated) {
+        this.isActivated = isActivated;
+    }
+
     /**
      * A function that tells if the trap is activated.
      * @return True if the trap is activated, false otherwise.
