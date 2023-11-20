@@ -53,7 +53,7 @@ public class Actor {
           /**
      * Sets the Y-coordinate position of the actor.
      *
-     * @param x The new Y-coordinate position.
+     * @param y The new Y-coordinate position.
      */
 
     public void setPosY(int y) {
