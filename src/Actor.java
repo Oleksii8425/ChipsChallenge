@@ -1,4 +1,5 @@
 /**
+ * @author Anna Hardy, Morgan Greenway, Adhya Singh
  * Represents an actor with position and distance attributes.
  */
 public class Actor {
@@ -18,6 +19,7 @@ public class Actor {
         this.posY = posY;
         this.distance = distance;
     }
+    public Actor(){}
        
     /**
      * Gets the X-coordinate position of the actor.
