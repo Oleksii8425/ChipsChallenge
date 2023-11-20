@@ -1,3 +1,8 @@
+/**
+ * A class to represent a Button.
+ * @author Oleksii
+ * @version 1.0
+ */
 public class Button {
     private int posX;
     private int posY;

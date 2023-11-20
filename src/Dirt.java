@@ -1,3 +1,8 @@
+/**
+ * A class to represent a Dirt tile.
+ * @author Oleksii
+ * @version 1.0
+ */
 public class Dirt extends Path {
     /**
      * Create a new Dirt tile with specified x and y coordinates and stating if it is walkable or not

@@ -1,3 +1,8 @@
+/**
+ * A class to represent a Trap.
+ * @author Oleksii
+ * @version 1.0
+ */
 public class Trap extends Path {
     private boolean isActivated;
 
