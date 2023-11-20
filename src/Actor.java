@@ -19,6 +19,7 @@ public class Actor {
         this.posY = posY;
         this.distance = distance;
     }
+    public Actor(){}
        
     /**
      * Gets the X-coordinate position of the actor.
