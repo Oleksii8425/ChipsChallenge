@@ -1,4 +1,5 @@
 /**
+ * @author Anna Hardy, Morgan Greenway, Adhya Singh
  * Represents an actor with position and distance attributes.
  */
 public class Actor {
