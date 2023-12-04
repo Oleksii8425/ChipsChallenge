@@ -1,0 +1,38 @@
+package com.example.playertest;
+
+public class Pinkball extends Monster {
+    private Direction pinkBallDirection;
+
+    public Pinkball(int posX, int posY, Direction direction) {
+        super(posX, posY, 1); // Assuming distance for PinkBall is set to 1
+        this.pinkBallDirection = direction;
+    }
+
+    public void reverseDirection() {
+        // Reverse the direction of the PinkBall
+        switch (pinkBallDirection) {
+            case UP:
+                pinkBallDirection = Direction.DOWN;
+                break;
+            case DOWN:
+                pinkBallDirection = Direction.UP;
+                break;
+            case LEFT:
+                pinkBallDirection = Direction.RIGHT;
+                break;
+            case RIGHT:
+                pinkBallDirection = Direction.LEFT;
+                break;
+            default:
+                break;
+        }
+    }
+
+    public Direction getPinkBallDirection() {
+        return pinkBallDirection;
+    }
+
+    public void setPinkBallDirection(Direction pinkBallDirection) {
+        this.pinkBallDirection = pinkBallDirection;
+    }
+}
