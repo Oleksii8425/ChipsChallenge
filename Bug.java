@@ -13,8 +13,6 @@ public class Bug extends Monster {
         int currentX = getPosX();
         int currentY = getPosY();
 
-        // Assume there are methods available to check available paths (isPath(), isBlocked(), etc.)
-
         if (followsLeftEdge) {
             // Try to follow the left edge
             if (isPath(currentX - 1, currentY)) {
