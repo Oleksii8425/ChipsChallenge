@@ -8,4 +8,9 @@ public class Monster extends Actor {
     public Monster(int posX, int posY, int distance) {
         super(posX, posY, distance);
     }
+
+    // Method to check collision with the player
+    public boolean checkCollisionWithPlayer(Player player) {
+        return (this.getPosX() == player.getPosX() && this.getPosY() == player.getPosY());
+    }
 }
