@@ -4,7 +4,7 @@ public class Pinkball extends Monster {
     private Direction pinkBallDirection;
 
     public Pinkball(int posX, int posY, Direction direction) {
-        super(posX, posY, 1); // Assuming distance for PinkBall is set to 1
+        super(posX, posY, 1); // Assuming distance/speed for PinkBall is set to 1
         this.pinkBallDirection = direction;
     }
 
@@ -24,9 +24,11 @@ public class Pinkball extends Monster {
                 pinkBallDirection = Direction.LEFT;
                 break;
             default:
+                // Handle other cases if needed
                 break;
         }
     }
+
 
     public Direction getPinkBallDirection() {
         return pinkBallDirection;
