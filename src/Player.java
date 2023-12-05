@@ -1,48 +1,61 @@
-import java.util.ArrayList;
-import java.util.List;
+package com.example.playertest;
+
+import javafx.scene.image.Image;
 
 public class Player extends Actor {
     private String name;
-    // private List<Item> inventory; // only works with an item class present
+    private Image playerImage;
+    private boolean isAlive;
 
-    /**
-     * Constructor for the Player class.
-     *
-     * @param posX  The initial X-coordinate position of the player.
-     * @param posY  The initial Y-coordinate position of the player.
-     * @param name  The player name.
-     */
-    public Player(int posX, int posY, String name) {
-        super(posX, posY, 1);
+    public Player(int posX, int posY, String name, Image playerImageFilePath) {
+        super(posX, posY, 1); // Assuming distance/speed for the player is set to 1
         this.name = name;
-       // this.inventory = new ArrayList<>();
+        this.playerImage = playerImageFilePath;
+        this.isAlive = true;
     }
 
-    /**
-     * Checks if the player is alive.
-     *
-     * @return true if the player is alive, false otherwise.
-     */
+    public Image getPlayerImage() {
+        return playerImage;
+    }
+
+    public void move(Direction direction) {
+        switch (direction) {
+            case UP:
+                setPosY(getPosY() - 1);
+                break;
+            case DOWN:
+                setPosY(getPosY() + 1);
+                break;
+            case LEFT:
+                setPosX(getPosX() - 1);
+                break;
+            case RIGHT:
+                setPosX(getPosX() + 1);
+                break;
+            default:
+                // Handle other cases if needed
+                break;
+        }
+    }
+
     public boolean isAlive() {
-        // Logic to determine player's status (alive/dead)
-        return true; // Placeholder logic, you can add your conditions here
+        return isAlive;
     }
 
-    /**
-     * Adds an item to the player's inventory.
-     *
-     * @param item The item to be added to the inventory.
-     */
-   /**public void addToInventory(Item item) {
-       inventory.add(item);
-} */
+    public void setAlive(boolean alive) {
+        this.isAlive = alive;
+    }
 
-    /**
-     * Gets the player's inventory.
-     *
-     * @return List containing the items in the player's inventory.
-     */
-    //public List<Item> getInventory() {
-    //    return inventory;
-   // }
+    public boolean checkCollisionWithMonster(Monster[] monsters) {
+        for (Monster monster : monsters) {
+            if (this.getPosX() == monster.getPosX() && this.getPosY() == monster.getPosY()) {
+                this.isAlive = false; // Player dies on collision with a Monster
+                return true; // Collision occurred
+            }
+        }
+        return false; // When there is no collision
+    }
 }
+
+
+
