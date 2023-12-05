@@ -59,8 +59,6 @@ public class Frog extends Monster {
                         queue.add(newX);
                         queue.add(newY);
                         visited[newX][newY] = true;
-                        // You can keep track of the path or distance if needed
-                        // Implement your own logic here to store path/distance information
                     }
                 }
             }
