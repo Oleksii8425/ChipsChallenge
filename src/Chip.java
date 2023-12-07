@@ -10,9 +10,10 @@ public class Chip extends Item{
      * @param posX
      * @param posY
      * @param collected
+     * @param image
      */
 
-    public Chip (int posX, int posY, boolean collected){
-        super (posX, posY, collected);
+    public Chip (int posX, int posY, boolean collected, Image image){
+        super (posX, posY, collected, image);
     }
 }

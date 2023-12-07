@@ -1,3 +1,5 @@
+import java.awt.*;
+
 /**
  * @author Nathaniel
  * @version 1.0
@@ -13,9 +15,10 @@ public class Key extends Item {
      * @param posY
      * @param collected
      * @param colour
+     * @param image
      */
-    public Key(int posX, int posY, boolean collected, String colour) {
-        super (posX, posY, collected);
+    public Key(int posX, int posY, boolean collected, String colour, Image image) {
+        super (posX, posY, collected, image);
         this.colour = colour;
     }
 

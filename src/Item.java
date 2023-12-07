@@ -1,3 +1,5 @@
+import java.awt.*;
+
 /**
  * @author Nathaniel
  * @version 1.0
@@ -8,6 +10,7 @@ public abstract class Item {
     protected int posX;
     protected int posY;
     protected boolean collected;
+    protected Image image;
 
 
     /**
@@ -17,10 +20,11 @@ public abstract class Item {
      * @param collected Boolean indicating if the player possesses the item
      */
 
-    public Item (int posX, int intY, boolean collected) {
+    public Item (int posX, int intY, boolean collected, Image image) {
         this.posX = posX;
         this.posY = posY;
         collected = false;
+        this.image = image;
     }
 
     /**
@@ -62,6 +66,14 @@ public abstract class Item {
      */
     public boolean getCollected () {
         return collected;
+    }
+
+    /**
+     * Returns the image relating to the item
+     * @return A .png file for the item
+     */
+    public Image getImage(){
+        return this.image;
     }
 
 
