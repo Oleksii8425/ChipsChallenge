@@ -1,9 +1,11 @@
 # **Chip's Challenge - A2**  
 
 ## **Description**
+<br>
 Chip's Challenge, a top-down tile-based puzzle video game, debuted in 1989 under Epyx as a launch title for the Atari Lynx. Initially created by developer Chuck Sommerville, who forged a significant portion of the game's levels, it then expanded its reach through various system ports. The title found increased recognition when it was included in the Microsoft Entertainment Pack 4 for Windows 3.1 in 1992 and the Best of Microsoft Entertainment Pack for Windows in 1995.
 
 ## **How to Play**
+<br>
 Using the arrow keys, you can move the Player. 
 The Monsters (Bug, Pink Ball, Frog)， will kill the Player if they ever come in contact.
 The Blocks can be pushed by Player.
@@ -12,24 +14,31 @@ Chips
 
 
 ## **Build Status**
+<br>
+- Complete
 
 ## **How to Install & Run the Project**
+<br>
 1. Clone the Repository
 - Open your terminal or command prompt
 - Run the following command:
+
 
 2. Open project in Software
 - Launch Intellij IDEA
 - Select 'Open' from the main menu
 
+
 3. Run the Main Class
 - Locate the main class of the project (e.g., `Main.java`).
 - Right-click the main class file.
+
 
 4. Enjoy the Game
 - Once the main class is executed, the Chip's Challenge game will pop-up, get ready to play!
 
 ## **Features**
+<br>
 - Classic Puzzle Gameplay: Experience the classic top-down tile-based puzzle gameplay that made Chip's Challenge a timeless favorite.
 - 10 Challenging Levels: Navigate through 10 meticulously designed levels, each presenting unique puzzles and obstacles.
 - Diverse Game Elements: Encounter and interact with various game elements, including computer chips, buttons, locked doors, water, and lethal monsters.
@@ -44,17 +53,20 @@ Chips
 - Level Improvement: Improve level scores by quickly completing timed levels and by using fewer attempts on all levels.
 
 ## **Tests**
+<br>
 
 ## **Credits**
+<br>
 Development Team: 
 1. Oleksii Pohorilyi
 2. Abdulrahman Dashti
 3. Morgan Greenway
 4. Nathaniel Olalere
 5. Adhya Singh
-6. 
-   
+6. Anna Hardy
+7. Carian Tan
 
+## **Resource**
+<br>
+https://en.wikipedia.org/wiki/Chip%27s_Challenge
 
-
-## **Resource** 
